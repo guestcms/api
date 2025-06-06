@@ -1,0 +1,45 @@
+{
+    "name": "guestcms/api",
+    "description": "API package for Guest CMS",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "guestcms",
+        "guest cms",
+        "guestcms platform",
+        "guestcms api"
+    ],
+    "homepage": "https://coastalmediabrand.com",
+    "authors": [
+        {
+            "name": "Coastal Media Brand LLC",
+            "email": "info@coastalmediabrand.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GuestCMS\\Api\\": "src"
+        }
+    },
+    "require": {
+    },
+    "require-dev": {
+        "knuckleswtf/scribe": "^5.0",
+        "laravel/pint": "^1.5.0",
+        "phpunit/phpunit": "^9.0|^10.0|^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GuestCMS\\Api\\Providers\\ApiServiceProvider"
+            ],
+            "aliases": {
+                "ApiHelper": "GuestCMS\\Api\\Facades\\ApiHelper"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
